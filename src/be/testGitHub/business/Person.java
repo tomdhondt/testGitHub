@@ -30,6 +30,10 @@ public class Person {
 	}
 	@Override
 	public String toString() {
-		return super.toString();
+		StringBuilder output = new StringBuilder();
+		output.append(this.getName());
+		output.append(" - ");
+		output.append(this.getLastName());
+		return output.toString();
 	}
 }
